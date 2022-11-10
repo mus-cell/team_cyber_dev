@@ -1,0 +1,260 @@
+.root{
+    --nav-color:navy;
+    --white-color:white;
+    --latest: black;
+    --blur-blue: #05668D;
+    --black-color: #000;
+    --navy-color: navy;
+    --crimson-color: crimson;
+    --red-color: red;
+    --footer: white;
+    --body: blue;
+    --footer-txt: white;
+    --caddress: black;
+}
+.dark{
+    --body: black;
+    --nav-color:navy;
+    --white-color:white;
+    --latest: dark;
+    --blur-blue: #05668D;
+    --black-color: white;
+    --navy-color: navy;
+    --crimson-color: crimson;
+    --red-color: red;
+    --footer: black;
+    --body: black;
+    --footer-txt: white;
+    --caddress: white;
+}
+body{
+    background: var(--body);
+}
+.navbar{
+    background-color: var(--navy-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .6;
+}
+.navbar .navbar-brand{
+    color: var(--white-color);
+    text-decoration: capitalize;
+    font-weight: 800;
+}
+.caddress{
+    color:var(--caddress)
+}
+.nav-link{
+    color: var(--white-color);
+}
+#navbarSupportedContent a{
+    color: var(--white-color);
+}
+.dropdown-menu{
+    background-color: var(--navy-color);
+    opacity: .7;
+}
+.dropdown-item{
+    color: var(--white-color);
+}
+.dropdown-item:hover{
+    background: var(--nav-color);
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 20px !important;
+    height: 20px !important;
+}
+.carousel{
+    position: relative;
+    clip-path: polygon(0 1%, 100% 0%, 100% 93%,0% 100%)
+}
+.carousel-caption{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.like{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black-color);
+    opacity: .4;
+}
+.face{
+    font-weight: 2rem;
+}
+.buton-fre{
+    color:var(--nav-color);
+    background: var(--white-color);
+}
+.buton-fre:hover{
+    color:var(--white-color);
+    background: var(--nav-color);
+    border: 1px solid var(--white-color);
+}
+.ccform{
+    margin: 5rem;
+}
+.cform{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.cform form{
+    width: 100%;
+    background:rgb(135, 96, 153);
+    padding: 1rem;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 50px; */
+    border-radius: 20px 70px;
+    filter:drop-shadow(2px 4px 8px #585858)
+}
+.cform form input[type="text"],
+.cform form input[type="email"]{
+    width: 100%;
+    box-shadow: none;
+    /* background: grey; */
+    opacity: .8rem;
+    color: var(--nav-color);
+    outline: none;
+}
+.cform form textarea{
+    width: 100%;
+    height: min(6.5rem);
+    box-shadow: none;
+    outline: none;
+}
+.btn{
+    padding-left: 5rem;
+    background-color:var(--blur-blue) ;
+}
+/* .p{
+    animation: animated-text 4s steps(16)
+    1s 1 normal both,
+    animated-cursor 500ms steps(16)
+    infinite normal;
+} */
+.bale{
+    color: var(--blur-blue);
+    background-color: var(--white-color);
+}
+.bale:hover{
+    color: var(--white-color);
+    background: var(--blur-blue);
+    border: 1px solid var(--white-color);
+}
+.about{
+    background: url(/image/irene-kredenets-dwKiHoqqxk8-unsplash\ \(1\).jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-attachment: fixed;
+}
+.about-txt{
+    color: var(--black-color);
+    position: absolute;
+    margin-top: 3rem;
+    padding:.6rem;
+    background-color: var(--white-color);
+    opacity: .6;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    left: 70%;
+}
+.footer{
+    color: var(--white-color);
+    background: var(--black-color);
+}
+.footer a{
+    color: var(--white-color);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.fa-brands{
+    font-size: 1.7rem;
+    transition: ease 1s;
+}
+.fa-brands:hover{
+    color: var(--crimson-color);
+    transition: ease 2s;
+    transform: translateY(-20px);
+}
+.dad{
+    color: var(--red-color);
+    font-size: 3rem;
+    background: var(--black-color);
+    padding: .7rem;
+    transition: ease 2s;
+    opacity:.1;
+}
+.dab{
+    color: var(--red-color);
+    font-size: 3rem;
+    background: var(--black-color);
+    padding: .7rem;
+    transition: ease 2s;
+    opacity: .1;
+}
+.dad:hover{
+    color:black;
+    transition: ease 1s;
+    transform: translateX(15%);
+    opacity: 1;
+}
+.dab:hover{
+    color: black;
+    transition: ease 1s;
+    transform: translateX(-15%);
+    opacity: 1;
+}
+.cat{
+    width: 50%;
+    color: var(--black-color);
+}
+.fate{
+    border: none;
+}
+latest{
+    color: var(--latest);
+}
+.latest::after{
+    content: none;
+    display: block;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 100%;
+    background: var(--crimson-color);
+    margin: auto;
+    
+}
+.style{
+    display: inline;
+}
+.form2 form label{
+    color: var(--white-color);
+}
+.grab{
+    position: relative;
+}
+.show .fa-eye{
+    display: none;
+}
+.show .fa-eye-slash{
+    display: block;
+}
+.show .shower .fa-eye-slash{
+    display: none;
+}
+.show{
+    position: relative;
+    top: 57%;
+    right: 20%;
+    color: black;
+}
